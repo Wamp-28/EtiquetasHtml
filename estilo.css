@@ -1,0 +1,32 @@
+p{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: rgb(118, 230, 14);
+    font-family: ARIAL;
+    text-align: center;
+
+}
+
+#intro {    
+    color: blue;    
+    font-size: 20px;
+    }
+
+#imagen {
+     width: 150px;
+     border-radius: 10px;
+     }
+    
+.tipos {    
+        color: red;    
+        font-weight: bold;
+    }
+
+a {
+        color: blue;
+        text-decoration: none;
+    }
+    
