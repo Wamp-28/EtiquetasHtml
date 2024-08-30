@@ -10,6 +10,11 @@ h1{
 
 }
 
+h2{
+    color: yellow;
+    font-family: ALGERIAN;
+}
+
 #intro {    
     color: blue;    
     font-size: 20px;
@@ -30,3 +35,39 @@ a {
         text-decoration: none;
     }
     
+
+*{
+    background-color: rgba(100, 143, 143);
+    opacity: 1.0;
+   
+}
+
+#fondo{
+    height: 800px;
+    background-image: url(imagen.png);
+    background-size: cover;
+
+
+}
+
+div p, div h2{
+    color: rgb(8, 54, 114);
+    font-size: 30px;
+  /*  border: 5px solid;*/
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+
+}
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
