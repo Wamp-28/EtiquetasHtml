@@ -1,0 +1,22 @@
+
+.btn-warning{
+    background-color: rgb(108, 18, 126);
+    color: azure;
+}
+
+.btn-info{
+    font-size: 20px;
+}
+
+.btn-secondary{
+    background-color: blue;
+    color: rgb(28, 218, 69);
+}
+
+.dropdown-item{
+    color: rgb(233, 19, 19);
+}
+
+.custom-navbar {
+    background-color: #4CAF50; /* Cambia este color por el que prefieras */
+  }
