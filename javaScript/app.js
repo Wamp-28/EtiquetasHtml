@@ -786,6 +786,7 @@ l3.mostarInfo()
 class Producto{
 
     constructor(nombre,precio,cantidad){
+
         this._nombre = nombre;
         this._precio = precio;
         this._cantidad = cantidad
@@ -823,6 +824,7 @@ class Producto{
 
 
     valorTotal(){
+      
         return this._precio * this._cantidad;
     }
 
@@ -835,31 +837,83 @@ class Producto{
 
     }
 
+    anadirStock(nuevoCantidad){
+
+        return this._cantidad += nuevoCantidad;
+    }
+
+    venderStock(nuevoCantidad){
+        this._cantidad -= nuevoCantidad;
+    }
+
+
+    operacion(){
+        nCantidad = parseFloat(prompt('Ingrese la nueva cantidad'));
+
+         let op = parseInt(prompt("Ingrese que tipo de operacion desea realizar 1. Añadir 2. Restar"));
+
+         if(op===1){
+            console.log(prod3.anadirStock(nCantidad));
+    
+        }else{
+
+         console.log(prod3.venderStock(nCantidad));
+        }
+    }
+
+
+    crearProducto(){
+        let productos; 
+        let precios; 
+        let cantidades; 
+        
+               
+        productos = prompt('Ingrese el nombre del producto');
+        precios = parseFloat(prompt('Ingrese el precio del producto'));
+        cantidades = parseFloat(prompt('Ingrese la cantidad del producto'));
+
+        return new Producto(productos, precios, cantidades);
+    }
+
+    
 
 }
+
+
+
 
 const prod1 = new Producto("Mouse", 45000, 5);
 const prod2 = new Producto("Monitor", 1450000, 3);
 
 
+const prod3 = crearProducto()
+
+
+
 prod1.mostrarNombreProducto();
 prod2.mostrarNombreProducto();
+prod3.mostrarNombreProducto();
 
 console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
 console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
+console.log(` El valor del producto 3 es: ${prod3.valorTotal()}`);
+
+
+prod3.operacion();
 
 
 prod1.modificarCantidad(8);
 prod2.modificarCantidad(6);
+//prod3.modificarCantidad(nCantidad);
+
 
 prod1.mostrarNombreProducto();
 prod2.mostrarNombreProducto();
+prod3.mostrarNombreProducto();
 
 console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
 console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
-
-
-
+console.log(` El valor del producto 3 es: ${prod3.valorTotal()}`);
 
 
 
